@@ -11,18 +11,18 @@
 </script>
 
 <div class="fill">
-  <button class="theme-button" on:click={toggleDark}>
+  <button class="theme" on:click={toggleDark}>
     <Icon icon={$isDark ? 'bx:sun' : 'bx:moon'} height="30" width="30" />
   </button>
   <Header />
 
-  <div class="page-container">
+  <div class="page">
     <slot />
   </div>
 </div>
 
 <style lang="scss">
-  .theme-button {
+  button.theme {
     border: none;
     position: fixed;
     background: none;
@@ -32,10 +32,10 @@
     color: var(--text-color);
     z-index: 10;
   }
-  .theme-button:hover {
+  button.theme:hover {
     color: var(--text-hover);
   }
-  .page-container {
+  div.page {
     overflow-y: auto;
     overflow-x: hidden;
   }

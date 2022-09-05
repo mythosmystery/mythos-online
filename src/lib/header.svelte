@@ -4,18 +4,18 @@
 </script>
 
 <nav class="header">
-  <div class="title-box">
+  <div class="title">
     <h6 class="title">Hunter Barton</h6>
     <p class="subtitle">Software Engineer</p>
   </div>
 
-  <div class="header-items">
-    <a class="header-item" href="/">
+  <div class="items">
+    <a class="item" href="/">
       <Icon icon="bx:home-heart" width="30" height="30" />
     </a>
-    <a class="header-item" href="/">About</a>
-    <a class="header-item" href="/#skills">Skills</a>
-    <a class="header-item" href="/resume">Resume</a>
+    <a class="item" href="/">About</a>
+    <a class="item" href="/#skills">Skills</a>
+    <a class="item" href="/resume">Resume</a>
   </div>
 </nav>
 
@@ -23,13 +23,14 @@
   .header {
     display: flex;
     justify-content: space-between;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
     background-color: var(--bg-color);
   }
 
-  .header-items {
+  .items {
     display: flex;
     gap: 3rem;
     margin: 3.7rem;
@@ -39,18 +40,18 @@
       display: none;
     }
   }
-  .header-item {
+  .item {
     color: var(--text-color);
     text-decoration: none;
   }
-  .header-item:hover {
+  .item:hover {
     color: var(--text-hover);
   }
 
-  .title-box {
+  div.title {
     flex-direction: column;
   }
-  .title {
+  h6.title {
     margin: 2rem 3rem 0rem 3rem;
     font-size: 2.5rem;
     font-weight: 200;
