@@ -3,6 +3,7 @@
   import Header from '../lib/header.svelte'
   import Icon from '@iconify/svelte'
   import { isDark } from '../lib/store'
+  import Footer from '../lib/footer.svelte'
 
   const toggleDark = () => {
     $isDark = !$isDark

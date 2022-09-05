@@ -4,7 +4,7 @@
 </script>
 
 <nav class="header">
-  <div class="title">
+  <div class="title-box">
     <h6 class="title">Hunter Barton</h6>
     <p class="subtitle">Software Engineer</p>
   </div>
@@ -15,6 +15,7 @@
     </a>
     <a class="item" href="/">About</a>
     <a class="item" href="/#skills">Skills</a>
+    <a class="item" href="/#projects">Projects</a>
     <a class="item" href="/resume">Resume</a>
   </div>
 </nav>
@@ -33,7 +34,9 @@
   .items {
     display: flex;
     gap: 3rem;
-    margin: 3.7rem;
+    margin-top: 3.7rem;
+    margin-right: 3rem;
+    margin-bottom: 2rem;
     align-items: center;
 
     @media (max-width: 640px) {
@@ -48,10 +51,10 @@
     color: var(--text-hover);
   }
 
-  div.title {
+  .title-box {
     flex-direction: column;
   }
-  h6.title {
+  .title {
     margin: 2rem 3rem 0rem 3rem;
     font-size: 2.5rem;
     font-weight: 200;

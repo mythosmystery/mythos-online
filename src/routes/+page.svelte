@@ -1,5 +1,6 @@
 <script>
   import Icon from '@iconify/svelte'
+  import Footer from '../lib/footer.svelte'
 </script>
 
 <div class="content-container">
@@ -19,10 +20,11 @@
 
   <section class="skills-section" id="skills">
     <div class="skills-icons">
-      <Icon icon="logos:rust" width="100" height="100" />
       <Icon icon="logos:javascript" width="100" height="100" />
       <Icon icon="logos:typescript-icon" width="100" height="100" />
+      <Icon icon="simple-icons:rust" width="100" height="100" color="var(--text-color)" />
       <Icon icon="logos:go" width="100" height="100" />
+      <Icon icon="logos:python" width="100" height="100" />
     </div>
     <div class="skills-text">
       <h6>My Skills</h6>
@@ -33,11 +35,18 @@
       </p>
     </div>
   </section>
+
+  <section class="projects-section" id="projects">
+    <h6>My Projects</h6>
+    <iframe class="project" src="https://hb-bug-tracker.herokuapp.com/" title="Bug Tracker" />
+  </section>
+
+  <Footer />
 </div>
 
 <style lang="scss">
   .content-container {
-    padding: 8rem 0;
+    padding-top: 8rem;
     margin-top: 8rem;
   }
   .about-section {
@@ -55,6 +64,7 @@
   .skills-section {
     display: flex;
     padding: 5rem;
+    scroll-margin-block-start: 300px;
     align-items: center;
     margin-top: 15rem;
     margin-bottom: 5rem;
@@ -65,6 +75,22 @@
       padding: 1rem;
     }
   }
+  .projects-section {
+    display: flex;
+    padding: 5rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    scroll-margin-block-start: 100px;
+    margin-top: 12rem;
+    margin-bottom: 2rem;
+  }
+  .project {
+    margin-top: 2rem;
+    border: none;
+    height: 80vh;
+    width: 100%;
+  }
   .icon-container {
     margin: 0 auto;
   }
@@ -72,6 +98,7 @@
     width: 50%;
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 
     @media (max-width: 640px) {
       width: 100%;
@@ -92,7 +119,7 @@
     }
   }
   h6 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 100;
     margin-bottom: 0.7rem;
   }

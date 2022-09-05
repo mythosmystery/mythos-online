@@ -20,6 +20,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 10rem;
   }
   .friendly {
     font-size: 4rem;
