@@ -39,5 +39,6 @@
   div.page {
     overflow-y: auto;
     overflow-x: hidden;
+    padding-top: 8rem;
   }
 </style>

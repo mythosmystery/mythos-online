@@ -47,7 +47,6 @@
 <style lang="scss">
   .content-container {
     padding-top: 8rem;
-    margin-top: 8rem;
   }
   .about-section {
     display: flex;
