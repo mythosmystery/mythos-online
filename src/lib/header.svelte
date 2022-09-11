@@ -1,6 +1,10 @@
 <script lang="ts">
   import Icon from '@iconify/svelte'
   import { isDark } from './store'
+
+  let showProjects: boolean
+
+  const toggleProjects = () => (showProjects = !showProjects)
 </script>
 
 <nav class="header">
@@ -15,12 +19,61 @@
     </a>
     <a class="item" href="/">About</a>
     <a class="item" href="/#skills">Skills</a>
-    <a class="item" href="/#projects">Projects</a>
+    <a class="item" href="/#projects"> Projects </a>
+    <span class="icon" on:click={toggleProjects}>
+      <Icon icon={`codicon:triangle-${showProjects ? `up` : `down`}`} height="20" width="20" />
+    </span>
     <a class="item" href="/resume">Resume</a>
   </div>
 </nav>
 
+<div class={`projects ${showProjects ? '' : 'hidden'}`} on:blur={toggleProjects}>
+  <a href="/project/typenotes">Typenotes</a>
+  <a href="/project/weather">Weather</a>
+  <a href="/project/markdown">Markdown</a>
+  <a href="/project/tracker">Bug Tracker</a>
+  <a href="/project/notes">Typenotes (v1)</a>
+</div>
+
+<div class={`bg ${showProjects ? '' : 'hidden'}`} on:click={toggleProjects} />
+
 <style lang="scss">
+  .bg {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 0;
+  }
+  .bg.hidden {
+    display: none;
+  }
+
+  .icon {
+    margin-left: 10px;
+  }
+  .icon:hover {
+    color: var(--text-hover);
+  }
+
+  .projects a {
+    margin-top: 3px;
+  }
+  .projects {
+    top: 6.5rem;
+    right: 8rem;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color);
+    padding: 0.8rem;
+    border-radius: 10px;
+    border: 2px dotted #00000077;
+    z-index: 10;
+  }
+  .projects.hidden {
+    display: none;
+  }
+
   .header {
     display: flex;
     justify-content: space-between;
@@ -33,19 +86,20 @@
 
   .items {
     display: flex;
-    gap: 3rem;
     margin-top: 3.7rem;
     margin-right: 3rem;
     margin-bottom: 2rem;
     align-items: center;
+    flex-direction: row;
 
-    @media (max-width: 640px) {
+    @media (max-width: 768px) {
       display: none;
     }
   }
   .item {
     color: var(--text-color);
     text-decoration: none;
+    margin-left: 3rem;
   }
   .item:hover {
     color: var(--text-hover);
