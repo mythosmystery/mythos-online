@@ -9,7 +9,9 @@
 
 <nav class="header">
   <div class="title-box">
-    <h6 class="title">Hunter Barton</h6>
+    <a href="/">
+      <h6 class="title">Hunter Barton</h6>
+    </a>
     <p class="subtitle">Software Engineer</p>
   </div>
 

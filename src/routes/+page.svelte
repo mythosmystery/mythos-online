@@ -12,7 +12,8 @@
         experience and a certificate in full-stack web development from Georgia Tech. I have been working as a
         full-stack developer on Bonfire at WPA Intelligence since March 2022. My hobbies include music, photography,
         video games, and of course, more programming. I deeply enjoy learning new skills and technologies, and have my
-        whole life. I was home-schooled as a child which taught me many things about self-motivated learning.
+        whole life. I was home-schooled as a child which taught me many things about self-motivated learning. I have
+        applied these skills ever since.
       </p>
     </div>
     <div class="icon-container">
@@ -35,7 +36,7 @@
         technologies such as, MongoDB, SQL, GraphQL, React, Vue, and Express. I have used external providers such as
         Twilio, Stripe, and Google Authentication. Since working at WPA Intelligence I have used these skills to build
         systems with Typescript, Vue, MongoDB and Rust. I have built personal projects using many different frameworks
-        and libraries for several languages
+        and libraries for several languages.
       </p>
     </div>
   </section>
