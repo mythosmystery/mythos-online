@@ -67,7 +67,7 @@
     background-color: var(--bg-color);
     padding: 0.8rem;
     border-radius: 10px;
-    border: 2px dotted #00000077;
+    border: 2px dotted #a682ff;
     z-index: 10;
   }
   .projects.hidden {

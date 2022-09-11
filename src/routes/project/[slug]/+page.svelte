@@ -3,7 +3,6 @@
 </script>
 
 <div class="container">
-  <!-- <h1>{data.projectName}</h1> -->
   <div class="markdown">{@html data.content}</div>
   <iframe
     src={`https://${data.projectName}.mythosmystery.ga`}
@@ -18,7 +17,7 @@
     margin-top: 3rem;
     height: 80vh;
     width: 80vw;
-    border: 3px dashed #00000066;
+    border: 3px dashed var(--text-color);
   }
 
   .container {
@@ -27,12 +26,5 @@
 
   .markdown {
     list-style-position: inside;
-  }
-
-  h1 {
-    text-transform: capitalize;
-    font-size: 3rem;
-    font-weight: 200;
-    text-align: center;
   }
 </style>
