@@ -8,12 +8,12 @@
     <div class="about-text">
       <h6>About Me</h6>
       <p>
-        I am a 24 year old from Tucson, Arizona now living in Oklahoma City. I have 2 years of web development
+        I am a 25 year old from Tucson, Arizona now living in Oklahoma City. I have 2 years of web development
         experience and a certificate in full-stack web development from Georgia Tech. I have been working as a
-        full-stack developer on Bonfire at WPA Intelligence since March 2022. My hobbies include music, photography,
+        full-stack developer on Bonfire at WPA Intelligence since March 2022. I am currently the lead developer on Bonfire and Bonfire-Canvass. My hobbies include music, photography,
         video games, and of course, more programming. I deeply enjoy learning new skills and technologies, and have my
         whole life. I was home-schooled as a child which taught me many things about self-motivated learning. I have
-        applied these skills ever since.
+        applied these skills ever since to be a true life-long learner.
       </p>
     </div>
     <div class="icon-container">
@@ -32,11 +32,11 @@
     <div class="skills-text">
       <h6>My Skills</h6>
       <p>
-        I have strong skills in Javascript, Typescript, Rust, Go, and Python. I have worked extensively with
+        I have strong skills in Javascript, Typescript, Rust, and Go. I have worked extensively with
         technologies such as, MongoDB, SQL, GraphQL, React, Vue, and Express. I have used external providers such as
         Twilio, Stripe, and Google Authentication. Since working at WPA Intelligence I have used these skills to build
         systems with Typescript, Vue, MongoDB and Rust. I have built personal projects using many different frameworks
-        and libraries for several languages.
+        and libraries for several languages. I also have skills and experience with creating and managing microservices in Rust and Typescript.
       </p>
     </div>
   </section>

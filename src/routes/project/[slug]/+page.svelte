@@ -5,10 +5,9 @@
 <div class="container">
   <div class="markdown">{@html data.content}</div>
   <iframe
-    src={`https://${data.projectName}.mythosmystery.ga`}
+    src={`https://${data.projectName}.mythosmystery.dev`}
     title={data.projectName}
     class="project-frame"
-    alt={data.projectName}
   />
 </div>
 
