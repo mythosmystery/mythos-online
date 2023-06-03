@@ -1,9 +1,10 @@
 # Welcome to Typenotes!
+
 ### The Best Way to Take Notes
 
 <br />
   
-An app by Hunter Barton  
+An app by Hunter Barton
 
 <br /> <br />
 
@@ -15,12 +16,12 @@ Typenotes is a responsive and intuitive note taking app. You can write notes in 
 
 <br />
 
-* NextJS
-* React
-* Typescript
-* Golang
-* GraphQL
-* MongoDB
+- NextJS
+- React
+- Typescript
+- Golang
+- GraphQL
+- MongoDB
 
 <br />
 
@@ -33,4 +34,4 @@ Typenotes is a responsive and intuitive note taking app. You can write notes in 
 
 <br />
 
-[Deployed App](https://typenotes.mythosmystery.ga)
+[Deployed App](https://typenotes.mythosmystery.dev)

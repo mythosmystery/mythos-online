@@ -1,4 +1,5 @@
 # Markdown Me
+
 ### The Best Way to Write Markdown
 
 <br />
@@ -15,10 +16,10 @@ A markdown preview and editing app. See real-time renders of the markdown you're
 
 <br />
 
-* NextJS
-* React
-* Marked
-* TailwindCSS
+- NextJS
+- React
+- Marked
+- TailwindCSS
 
 <br />
 
@@ -26,8 +27,8 @@ A markdown preview and editing app. See real-time renders of the markdown you're
 
 <br />
 
-[Source Code](https://github.com/mythosmystery/markdown-it)  
+[Source Code](https://github.com/mythosmystery/markdown-it)
 
 <br />
 
-[Deployed App](https://markdown.mythosmystery.ga)
+[Deployed App](https://markdown.mythosmystery.dev)

@@ -1,4 +1,5 @@
 # Typenotes (v1)
+
 ### The OG Typenotes
 
 <br />
@@ -15,13 +16,13 @@ Create, store, and update your notes. All of your notes are available in this in
 
 <br />
 
-* Typescript
-* GraphQL
-* NextJS
-* React
-* Postgresql
-* TypeORM
-* TailwindCSS
+- Typescript
+- GraphQL
+- NextJS
+- React
+- Postgresql
+- TypeORM
+- TailwindCSS
 
 <br />
 
@@ -34,4 +35,4 @@ Create, store, and update your notes. All of your notes are available in this in
 
 <br />
 
-[Deployed App](https://notes.mythosmystery.ga)
+[Deployed App](https://notes.mythosmystery.dev)
