@@ -1,9 +1,7 @@
 import { sveltekit } from '@sveltejs/kit/vite';
-import type { UserConfig } from 'vite';
-import { Mode, plugin as mdPlugin } from 'vite-plugin-markdown'
+import { defineConfig } from 'vite';
+import { plugin, Mode } from 'vite-plugin-markdown';
 
-const config: UserConfig = {
-	plugins: [sveltekit(), mdPlugin({mode: [Mode.HTML]})]
-};
-
-export default config;
+export default defineConfig({
+	plugins: [sveltekit(), plugin({ mode: [Mode.HTML] })]
+});
