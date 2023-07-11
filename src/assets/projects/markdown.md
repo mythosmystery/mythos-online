@@ -1,3 +1,8 @@
+---
+url: https://md.mythosmystery.dev
+title: Markdown Me
+---
+
 # Markdown Me
 
 ### The Best Way to Write Markdown

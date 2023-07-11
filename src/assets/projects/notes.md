@@ -1,3 +1,8 @@
+---
+url: https://tn-v0.mythosmystery.dev
+title: Typenotes (v1)
+---
+
 # Typenotes (v1)
 
 ### The OG Typenotes

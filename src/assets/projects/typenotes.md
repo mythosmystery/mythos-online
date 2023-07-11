@@ -1,3 +1,8 @@
+---
+title: Typenotes
+url: https://tn-v1.mythosmystery.dev
+---
+
 # Welcome to Typenotes!
 
 ### The Best Way to Take Notes

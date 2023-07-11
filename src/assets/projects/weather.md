@@ -1,3 +1,8 @@
+---
+url: https://weather.mythosmystery.dev
+title: Next Gen Weather
+---
+
 # Next Gen Weather
 
 ### Weather, Perfected
