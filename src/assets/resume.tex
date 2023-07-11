@@ -1,0 +1,129 @@
+\documentclass[12pt]{article}
+\usepackage[english]{babel}
+\usepackage{cmbright}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage[sf]{libertine}
+\usepackage{microtype}
+\usepackage{paracol}
+\usepackage{supertabular}
+\usepackage{titlesec}
+\hypersetup{colorlinks, urlcolor=black, linkcolor=black}
+
+% Geometry
+\geometry{hmargin=1.75cm, vmargin=2.5cm}
+\columnratio{0.65, 0.35}
+\setlength\columnsep{0.05\textwidth}
+\setlength\parindent{0pt}
+\setlength{\smallskipamount}{8pt plus 3pt minus 3pt}
+\setlength{\medskipamount}{16pt plus 6pt minus 6pt}
+\setlength{\bigskipamount}{24pt plus 8pt minus 8pt}
+
+% Style
+\pagestyle{empty}
+\titleformat{\section}{\scshape\LARGE\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{\bigskipamount}{\smallskipamount}
+\newcommand{\heading}[2]{\centering{\sffamily\Huge #1}\\\smallskip{\large{#2}}}
+\newcommand{\entry}[4]{{{\textbf{#1}}} \hfill #3 \\ #2 \hfill #4}
+\newcommand{\tableentry}[3]{\textsc{#1} & #2\expandafter\ifstrequal\expandafter{#3}{}{\\}{\\[6pt]}}
+
+\begin{document}
+
+\vspace*{\fill}
+
+\begin{paracol}{2}
+
+% Name & headline
+\heading{Hunter Barton}{Software developer, musician, and photographer}
+
+\switchcolumn
+
+% Identity card
+\vspace{0.01\textheight}
+\begin{supertabular}{ll}
+  \footnotesize\faPhone & +1 (520) 780-9324 \\
+  \footnotesize\faEnvelope & \href{mailto:hunter@mythosmystery.dev}{hunter@mythosmystery.dev} \\
+  \footnotesize\faLinkedin & \href{https://www.linkedin.com/in/hunter-barton-okc}{linkedin.com/in/hunter-barton-okc} \\
+\end{supertabular}
+
+\bigskip
+\switchcolumn*
+
+\section{experience}
+
+\entry{WPA Intelligence}{Lead Developer}{Oklahoma City, OK}{Mar-2023 -- Present}
+\begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
+  \item Lead a team of 9 building a React Native app as well as maintaining an existing Vue app.
+  \item Rewrote a dashboard using Elasticsearch and Chart.js for quick updates when filters are changed
+\end{itemize}
+
+\medskip
+
+\entry{WPA Intelligence}{Developer}{Oklahoma City, OK}{Jan-2023 -- Mar-2023}
+\begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
+  \item Built a system for sending notifications via email, text, and in-app using GraphQL subscriptions powered by Kafka
+  \item Rewrote Kafka text consumer to take advantage of multi-threading, this increased text throughput by 2,000\%
+\end{itemize}
+
+\medskip
+
+\entry{WPA Intelligence}{Jr. Developer}{Oklahoma City, OK}{Mar-2022 -- Jan-2023}
+\begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
+  \item Made payment system with Stripe, resulting in a 1,000\% increase in revenue
+  \item Built out a system using Rust for sending text messages using Twilio and Kafka. 
+  \item Created a feature for sending ringless voicemail messages resulting in over \$300,000 in revenue
+\end{itemize}
+
+\switchcolumn
+
+\section{skills}
+\begin{supertabular}{rl}
+  \tableentry{\footnotesize\faCode}{React \textperiodcentered{} Svelte \textperiodcentered{} Vue}{}
+  \tableentry{}{GraphQL \textperiodcentered{} Rest \textperiodcentered{} TRPC}{}
+  \tableentry{}{Node \textperiodcentered{} Express \textperiodcentered{} Apollo}{}
+  \tableentry{}{MongoDB \textperiodcentered{} Postgres \textperiodcentered{} Redis}{}
+  \tableentry{}{Docker \textperiodcentered{} Elasticsearch \textperiodcentered{} Kafka}{}
+  \tableentry{}{}{}
+
+  \tableentry{\footnotesize\faLanguage}{Javascript/Typescript \textperiodcentered{} very proficient}{}
+  \tableentry{}{Rust \textperiodcentered{} proficient}{}
+  \tableentry{}{Go \textperiodcentered{} proficient}{}
+  \tableentry{}{Java \textperiodcentered{} some knowledge}{}
+\end{supertabular}
+
+\section{other interests}
+\begin{supertabular}{rl}
+  \tableentry{art}{Music}{}
+  \tableentry{}{Photography}{spaceafter}
+  \tableentry{other}{Smash Bros}{}
+  \tableentry{}{Cooking}{spaceafter}
+\end{supertabular}
+
+\switchcolumn*
+
+\section{education}
+
+\entry{Georgia Tech}{Certification, Full-stack Web Dev}{Atlanta, GA (Remote)}{2021}
+\begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
+  \item Learned the MERN stack and how to build full-stack web applications.
+  \item Lead the team in the final project, a full-stack social-media application.
+\end{itemize}
+
+\switchcolumn
+
+\section{awards}
+\begin{supertabular}{rl}
+  \tableentry{Jun-2023}{\textbf{Employee of the Month}}{}
+  \tableentry{}{WPA Intelligence}{spaceafter}
+  \tableentry{Nov-2022}{\textbf{Employee of the Month}}{}
+  \tableentry{}{WPA Intelligence}{spaceafter}
+\end{supertabular}
+
+\end{paracol}
+
+\vspace*{\fill}
+
+\end{document}
